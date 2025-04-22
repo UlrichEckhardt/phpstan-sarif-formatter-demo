@@ -1,0 +1,16 @@
+parameters:
+    # Use a high level for scanning.
+    # Instead of reducing the level to get a manageable amount of
+    # issues, we rely on GitHub to filter and track the list of
+    # flaws.
+    level: 9
+    paths:
+        - src
+
+services:
+    errorFormatter.sarif:
+        class: PHPStanSarifErrorFormatter\SarifErrorFormatter
+        arguments:
+            relativePathHelper: @simpleRelativePathHelper
+            currentWorkingDirectory: %currentWorkingDirectory%
+            pretty: true
