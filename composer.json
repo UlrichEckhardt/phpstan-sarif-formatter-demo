@@ -1,0 +1,17 @@
+{
+    "name": "ulricheckhardt/phpstan-sarif-formatter-demo",
+    "description": "Demo for the integration of PHPStan and GitHub",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "UlrichEckhardt\\PhpstanSarifFormatterDemo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ulrich Eckhardt",
+            "email": "ulrich.eckhardt@base-42.de"
+        }
+    ],
+    "require": {}
+}
