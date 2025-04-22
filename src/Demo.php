@@ -6,4 +6,8 @@ namespace UlrichEckhardt\PhpstanSarifFormatterDemo;
 
 class Demo
 {
+    public function flawedMethod(): Demo
+    {
+        return null;
+    }
 }
